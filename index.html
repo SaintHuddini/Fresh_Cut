@@ -1,44 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/style.css" />
+	<script src="https://kit.fontawesome.com/62360debde.js" crossorigin="anonymous"></script>
+	<title>Fresh Fade</title>
+
 </head>
+
 <body>
-    <article>
-
-        <!-- Header -->
-        <header>
-        
-        </header>
-
-        <!-- Klippningar&Priser  -->
-        <section>
-        
-        </section>
-
-        <!-- produkter som är bra för håret  -->
-
-        <section>
-        
-        </section>
-
-        <!-- blogg -->
-        <section>
-        
-        </section>
-
-        <footer>
-        
-        </footer>
 
 
-    
-    </article>
-    
+	<!-- Header navbar -->
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<a class="navbar-brand" href="index.html">
+			<img src="assets/images/nav_logo.png" alt="logo" >
+        </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Barbers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Price & Treatments</a>
+					</li>
+				</ul>
+			</div>
+	</nav>
+
+
+	<!-- Slides  -->
+
+	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="assets/images/slide1.jpg" class="d-block w-100" alt="Slide1">
+				<div class="carousel-caption">
+					<h5>First slide label</h5>
+					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="assets/images/slide2.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption">
+					<h5>Second slide label</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="assets/images/slide3.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption">
+					<h5>Third slide label</h5>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+	<!-- Jumbotron  -->
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h1 class="display-4">Fluid jumbotron</h1>
+					<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its
+						parent.
+					</p>
+				</div>
+				<div class="col-12 text-center">
+					<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="And here's some amazing content. It's very engaging. Right?">Just now!</button>
+					<script src="https://unpkg.com/@popperjs/core@2.0.0-rc.1"></script>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Treatments -->
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 text-center display-3">
+					<h3>Treatments</h3>
+					<hr>
+				</div>
+				<div class="col-sm-12 text-center col-md-6 ">
+					<h5><i class="fas fa-cut"> </i>Haircut & Trim </h5>
+					<p> bla bla bla bla bla </p>
+				</div>
+				<div class="col-sm-12 text-center col-md-6">
+					<h5><i class="fas fa-paint-brush"></i> Dye Your Hair</h5>
+					<p>bla bla bla bla bla</p>
+				</div>
+				<div class="col-sm text-center">
+					<h5><i class="fas fa-tint"></i>Facial Treatment </h5>
+					<p> bla bla bla bla bla</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Fixed BG  -->
+
+	<div class="parallax"></div>
+
+	<!-- Barbers -->
+
+	<!-- Social Media  -->
+	<!-- About me  -->
+	<footer>
+
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<script>
+		$(function () {
+                $('[data-toggle="popover"]').popover()})
+	</script>
 </body>
+
 </html>
