@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Raleway&display=swap');
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lucida Sans', serif;
+  color: rgb(7, 1, 1);
+}
+
+.carousel-inner img{
+    width;100%;
+    height:100%;
+}
+
+
+
+.jumbortron{
+padding:0;
+border-radius:0
+}
+
+.jumbotron-fluid{
+    margin-bottom: 6.69rem;
+    padding:5px;
+}
+
+.title_hr {
+    width:15%;
+    margin-bottom: 20px;
+}
+
+
+  /* Create the parallax scrolling effect to the home page */
+.h_parallax {
+
+  background-image: url('../images/h_parallax.jpg');
+  height: 200px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+  margin-top: 30px;
+} 
+
+ /* Create the parallax scrolling effect to the price&treatment page */
+
+.p_parallax {
+
+  background-image: url('../images/p_parallax.jpg');
+  height: 150px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+  margin-top: 30px;
+} 
+
+
+/* Media queries  */
+
+@media (max-width: 576Px) and (min-width: 186px)  { }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) and (min-width: 577px) { 
+
+}
+
+
+@media (max-width: 992px) and (min-width: 769px)  { 
+    .card-img, .card-img-top {
+    height: 294px;
+}
+
+
+ }
+
+
