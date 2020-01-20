@@ -30,8 +30,8 @@
 
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#myForm"><button type="button" class="btn btn-outline-danger open-button" onclick="openForm()"">Book Now!</button></a>
+					<li class="nav-item" >
+						<a class="nav-link" href="#myForm"><button type="button" class="btn btn-danger open-button" id="nav_b" onclick="openForm()"">Book Now!</button></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
@@ -42,11 +42,44 @@
 					<li class="nav-item">
 						<a class="nav-link" href="price.html">Price & Treatments</a>
 					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href="gallery.html">Gallery</a>
+					</li>
 				</ul>
 			</div>
 	</nav>
 
-    <!--treatments -->
+	<!--Boooking form -->
+
+	<div class="form-popup" id="myForm">
+		<form action="/action_page.php" class="form-container">
+			<h2>Booking request</h2>
+
+			<label for="name"><b>Name:</b></label>
+			<input type="text" placeholder="Enter Name" name="name" required>
+
+			<label for="time"><b>Time:</b></label>
+			<input type="time" placeholder="What Time?" name="time" required>
+
+			<button type="submit" class="btn">Book</button>
+							<button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+							</form>
+			</div>
+
+
+			<script>
+				function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+			</script>
+
+
+
+    <!--treatments description -->
     <div class="price">
 
     <h2 class="display-4 text-center"> Treatments </h2>
@@ -87,11 +120,11 @@ Creative color (Creative, custom color treatment. Time to meet your new self? Th
 
 			<div class="p_parallax"></div>
 
-     <!--Price -->
+     <!--Price, orginal price deleted new price with mark-->
         
-        
+     <div class="price">   
      <h2 class="display-4 text-center padding">Prices</h2>
-     <hr>
+     <hr> 
      <ul>
         <li>
             <p>Child (0-2 years):<del>£9.90</del> <mark>£4.90</mark></p>  
@@ -130,7 +163,7 @@ Creative color (Creative, custom color treatment. Time to meet your new self? Th
 			<div class="container-fluid">
 				<div class="row text-center">
 					<div class="col-12">
-						<h2>Connect</h2>
+						<h2 class="connect">Connect</h2>
 						<hr class="title_hr">
 					</div>
 					<div class="col-12 social">

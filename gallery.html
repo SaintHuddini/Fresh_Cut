@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
+	<script src="https://kit.fontawesome.com/62360debde.js" crossorigin="anonymous"></script>
+	<title>Fresh Fade</title>
+
+</head>
+
+<body>
+
+
+	<!-- Header navbar -->
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="index.html">
+			<img src="assets/images/nav_logo.png" id="nav_logo" alt="logo" >
+        </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item" id="nav_b">
+						<a class="nav-link" href="#myForm"><button type="button" class="btn btn-danger open-button" id="nav_b" onclick="openForm()"">Book Now!</button></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#barbers">Barbers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="price.html">Price & Treatments</a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+			</div>
+	</nav>
+
+	<!--Boooking form -->
+
+	<div class="form-popup" id="myForm">
+		<form action="/action_page.php" class="form-container">
+			<h2>Booking request</h2>
+
+			<label for="name"><b>Name:</b></label>
+			<input type="text" placeholder="Enter Name" name="name" required>
+
+			<label for="time"><b>Time:</b></label>
+			<input type="time" placeholder="What Time?" name="time" required>
+
+			<button type="submit" class="btn">Book</button>
+							<button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+							</form>
+	</div>
+
+
+			<script>
+				function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+			</script>
+
+			<!-- gallery-->
+			<div id="photo">
+
+				<img src="assets/images/gallery_1.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_2.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_3.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_4.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_5.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_6.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_7.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_8.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_9.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_10.jpg" alt="gallery pic">
+
+				<img src="assets/images/gallery_11.jpg" alt="gallery pic">
+
+                <img src="assets/images/gallery_12.jpg" alt="gallery pic">
+            </div>
+
+
+
+				<!-- Social Media  -->
+
+				<div class="container-fluid">
+					<div class="row text-center">
+						<div class="col-12">
+							<h2 class="connect">Connect</h2>
+							<hr class="title_hr">
+						</div>
+						<div class="col-12 social">
+							<a href=""><i class="fab fa-facebook"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-google-plus-g"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<a href=""><i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- About Us footer  -->
+				<footer>
+					<div class="container-fluid ">
+						<div class="row text-center">
+							<div class="col-md-4">
+								<hr>
+								<img src="assets/images/nav_logo.png" id="footer_logo" alt="Footer Logp">
+								<hr>
+								<p> bla bla bla</p>
+								<p>bla bla bla</p>
+								<p> bla bla bla</p>
+							</div>
+							<div class="col-md-4">
+								<hr>
+								<h5>Our Hours</h5>
+								<hr>
+								<p>bla bla bla </p>
+								<p>bla bla bla </p>
+								<p>bla bla bla </p>
+							</div>
+							<div class="col-md-4">
+								<hr>
+								<h5>Location</h5>
+								<hr>
+								<p>bla bla bla </p>
+								<p>bla bla bla </p>
+								<p>bla bla bla </p>
+							</div>
+						</div>
+					</div>
+
+				</footer>
+
+				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+					crossorigin="anonymous">
+				</script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+					crossorigin="anonymous">
+				</script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+					crossorigin="anonymous">
+				</script>
+				<script>
+					$(function () {
+                $('[data-toggle="popover"]').popover()})
+				</script>
+</body>
+
+</html>

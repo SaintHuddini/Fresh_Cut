@@ -1,3 +1,5 @@
+
+/* Change the size and colors of the Social Icons so they look orginal and fitting to the website*/
 .social a {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -6,6 +8,8 @@
     padding: 3rem;
     width:100%;
 }
+
+/* Colour found on a tutorial*/
 
 .fa-facebook {
     color: #3b5998

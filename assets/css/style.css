@@ -19,6 +19,7 @@ padding:0;
 border-radius:0
 }
 
+/*Makes the popup show without hiding any other text */
 .jumbotron-fluid{
     margin-bottom: 6.69rem;
     padding:5px;
@@ -60,12 +61,40 @@ border-radius:0
 } 
 
 
+/* Gallery*/
+
+
+#photo {
+  clear:both; 
+  line-height:0;
+  column-count: 2;
+  column-gap: 0;
+  margin-top:104px;
+  align-items: center;
+  }
+
+  #photo img {
+    width: 100%;
+    height: auto;
+  }
+  
+
 /* Media queries  */
 
-@media (max-width: 576Px) and (min-width: 186px)  { }
+@media (max-width: 576Px) and (min-width: 186px)  { 
+#photo{
+       column-count:1;
+       margin-top:89px;
+     }
+}
+
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) and (min-width: 577px) { 
+#photo{
+       column-count:2;
+       margin-top:89px;
+     }
 
 }
 
@@ -74,6 +103,7 @@ border-radius:0
     .card-img, .card-img-top {
     height: 294px;
 }
+
 
 
  }

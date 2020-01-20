@@ -1,11 +1,22 @@
+/* More natural looking logo*/
 #nav_logo{
     padding-left:15px;
     width: 75%;
 }
 
+/* hover effect on book now button*/
+#nav_b:hover{
+background:transparent;
+color:Red;
+}
+
 .navbar-nav li {
 
 padding-right:20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
 }
 
 .navbar{
@@ -20,6 +31,11 @@ margin-right:15px;
 
 .div #navbarResponsivesponsive{
    margin:10px;
+}
+
+
+div#navbarResponsive.navbar-collapse.collapse.show {
+text-align: right;
 }
 
 .price .display-4 {
@@ -41,9 +57,10 @@ margin-right:15px;
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    max-height: 425px;
 }
 
 /* Full-width input fields */
@@ -85,15 +102,22 @@ margin-right:15px;
 
 
 
+
 /* Media queries  */
 
 @media (max-width: 576Px) and (min-width: 186px)  {
+.navbar {
+    height:89px;
+    } 
+    }
 
-}
+    
 
 @media (max-width: 768px) and (min-width: 577px) { 
     .navbar {
     height:89px;
+
+    
     } 
 
  }
