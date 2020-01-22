@@ -9,7 +9,7 @@
     width:100%;
 }
 
-/* Colour found on a tutorial*/
+
 
 .fa-facebook {
     color: #3b5998
@@ -41,14 +41,16 @@ color: #bb0000;
     color: #222}
 
 footer{
-    background-color: #343a40;
-    color:rgb(110, 103, 103);
+    background-color: #f8f9fa;
+    color: black;
     margin-bottom:1px;
 }
 
-#footer_logo{
-    height: 15%;
-}                     
+
+
+footer a{
+    color:black;
+}
 
 @media (max-width: 576Px) and (min-width: 186px)  {
 
@@ -57,10 +59,15 @@ footer{
     }
 }
 @media (max-width: 768px) and (min-width: 577px) {
-.social a {padding: 16px;
-}
+.social a {
+    font-size: 1.7rem;
+    padding: 14px;
+ }
 }
 
 @media (max-width: 992px) and (min-width: 769px)  {
 
-.social a {font-size:3rem;}
+.social a {
+    font-size:2.5rem;
+    }
+}

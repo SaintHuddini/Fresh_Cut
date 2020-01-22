@@ -33,9 +33,13 @@ margin-right:15px;
    margin:10px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    float: right;
+}
 
 div#navbarResponsive.navbar-collapse.collapse.show {
-text-align: right;
+background-color: rgba(248, 249, 250, 0.336);
 }
 
 .price .display-4 {
@@ -109,19 +113,15 @@ text-align: right;
 .navbar {
     height:89px;
     } 
-    }
+}
 
     
 
 @media (max-width: 768px) and (min-width: 577px) { 
     .navbar {
     height:89px;
-
-    
     } 
-
- }
+}
 
 @media (max-width: 992px) and (min-width: 769px)  {
-
 }
