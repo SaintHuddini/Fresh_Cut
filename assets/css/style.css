@@ -58,7 +58,13 @@ border-radius:0
   background-size: cover;
   margin-bottom: 60px;
   margin-top: 30px;
-} 
+}
+
+/*The price&treatment page */
+
+.price .display-4 {
+    margin-top: 9rem;
+}
 
 /* Gallery*/
 
