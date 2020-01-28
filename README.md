@@ -26,7 +26,7 @@ I always liked to go to the hairdresser and get the feeling of a new hairstyle, 
 * Barbers on cards with img and description.
 * Gallery section.
 * Price section with description and new price.
-* Social Media secion.
+* Social Media section.
 * footer (about us, location and hours).
 
 
@@ -62,7 +62,64 @@ As you can see I have named the following images after the positioning of the we
 * nav_logo goes to the navbar and is the logo of the website.
 * slide# are the images for the carousel.
 
+## testing
+
+
+* Navbar.
+
+Works well I have tested it in all forms of devices. 
+
+* Booking Form.
+
+As I was expecting the booking form pops up when you click on it. The booking form will not save any information or send the information anywhere.
+How ever as I was expecting it pops up and looks good.
+
+* Carousel slides.
+
+The Carousel slides works. If you click on the right side of the picture or vice versa it will slide to that side and show a new image.
+
+* Jumbotron.
+
+Works well and is responsive. The popup button on the jumbotron works well.
+
+* Parallax-effect.
+
+The fixed image works very well I have tried it in github pages and it displays as it should.
+
+* Popover.
+
+No bugs on the popovers.
+
+* Barbers on cards with img and description.
+
+The image is displaying and is responsive.
+
+* Gallery section.
+
+Images are displaying and is responsive and the quality is the same on a smaller device.
+
+* Price section with description and new price.
+
+You can see the new  price and the deleted ones. Test worked well.
+
+
+* Social Media section.
+
+The icons works very well, when you click on the social media icons a new page opens and directs you to some random barbers social media page.
+
+* footer (about us, location and hours).
+
+The footer works good and the a tags on the section works when you click on them.
+
+
+## Deployment
+
+Wrote the code on gitpod and deployed it on Github and Github Pages.
+
+The diffrence between the deployed site and the first version devolpment is mostly colors and sizes of the contet.
+
 ## Credits
+
 In this project I want to give credit to Bootstrap for their amazing frameworks.
 https://getbootstrap.com/docs/4.4/getting-started/introduction/
 
@@ -75,5 +132,8 @@ https://www.w3schools.com/
 The biggest of thanks will go to Google for every small solution I have found there.
 https://www.google.com/
 
+### Media
+
+The photos used in this site were obtained from https://unsplash.com/
 
 ##### Code Institue ©SaintHuddini
