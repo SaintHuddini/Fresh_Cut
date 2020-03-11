@@ -1,8 +1,8 @@
 function initMap(){
 var locations = [
-      ['F.F in Stockholm',59.334591, 18.063240, 1],
-      ['F.F in Paris', 48.864716, 2.349014, 2],
-      ['F.F in London',  51.509865, -0.118092, 3]
+      ['F.F in Stockholm',59.334591, 18.063240],
+      ['F.F in Paris', 48.864716, 2.349014],
+      ['F.F in London',  51.509865, -0.118092]
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -13,9 +13,9 @@ var locations = [
 
     var infowindow = new google.maps.InfoWindow();
 
-    var marker, i;
+    var marker;
 
-    for (i = 0; i < locations.length; i++) {  
+    for ( var i = 0; i < locations.length; i++) {  
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map
