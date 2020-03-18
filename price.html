@@ -14,11 +14,7 @@
 	<title>Fresh Fade</title>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
 	</script>
-	<script type="text/javascript">
-		(function(){
-      emailjs.init("user_g4l4GLOXFxFHl2r0NkSa6");
-   })();
-	</script>
+
 </head>
 
 <body>
@@ -62,6 +58,9 @@
 		<form class="form-container" onsubmit="return sendMail(this);">
 			<h2>Booking request</h2>
 
+			<div id="success">Success</div>
+			<div id="fail">Fail try again...</div>
+
 			<label for="name"><b>Name:</b></label>
 			<input type="text" id='name' placeholder="Enter Name" name="name" required>
 
@@ -69,12 +68,21 @@
 			<input type="email" id='emailaddress' placeholder="Enter your Email" name="emailaddress" required>
 
 			<label for="time"><b>Time:</b></label>
-			<input type="time" id='time' name="bookingrequest" required>
+			<input type="time" id='time' name="time" required>
 
-			<button type="submit" class="btn">Book</button>
+			<label for="saloon">Select Your Saloon:</label>
+			<select id="saloon" name="saloon">
+                <option value="Stockholm">Stockholm</option>
+                <option value="Paris">Paris</option>
+                <option value="London">London</option>
+            </select>
+
+			<button type="submit" class="btn" id="submit">Book</button>
 			<button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
 		</form>
 	</div>
+
+
 
 
 	<!--treatments description -->
@@ -211,26 +219,26 @@
 			<p>&copy;SaintHuddini 2020</p>
 		</div>
 	</footer>
-	<script src="assets/javaScript/sendEmail.js"></script>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhreTeSuSl35x15aHieGyLA0zgdGng5A8&callback=initMap">
-	</script>
-	<script src="assets/javaScript/form.js"></script>
-	<script src="assets/javaScript/googleMaps.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-
 	<script>
 		$(function () {
                 $('[data-toggle="popover"]').popover()})
 	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<script src="assets/javaScript/sendEmail.js"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhreTeSuSl35x15aHieGyLA0zgdGng5A8&callback=initMap">
+	</script>
+	<script src="assets/javaScript/bookingRequest.js"></script>
+	<script src="assets/javaScript/googleMaps.js"></script>
+
 </body>
 
 </html>
