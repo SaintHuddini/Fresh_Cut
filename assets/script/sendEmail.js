@@ -1,4 +1,5 @@
-/* A function that lets the user send me a email with the values of the form and then recieves a confirmation of the booking request */
+/* A function that lets the user send me a email with the values of the form 
+and then recieves a confirmation of the booking request */
 
 (function () {
     emailjs.init("user_g4l4GLOXFxFHl2r0NkSa6");
@@ -6,13 +7,13 @@
 
 function success() {
     $('#success').show();
-    return success()
-};
+    return success();
+}
 
 function fail() {
     $('#fail').show();
-    return fail()
-};
+    return fail();
+}
 
 
 function sendMail(contactForm) {
@@ -22,15 +23,16 @@ function sendMail(contactForm) {
         'time': contactForm.time.value,
         'saloon': contactForm.saloon.value
     })
+    //The response(success/fail) of the use of the form.
         .then(
             function (response) {
                 console.log('SUCCESS', response);
-                return success()
+                return success();
             },
             function (error) {
                 console.log('FAILURE');
-                return fail()
+                return fail();
             });
     return false;
-};
+}
 
