@@ -1,135 +1,109 @@
 /* More natural looking logo*/
-#nav_logo{
-    padding-left:15px;
-    width: 75%;
+ #nav_logo{
+     padding-left:15px;
+     width: 75%;
 }
-
 /* hover effect on book now button*/
-#nav_b:hover{
-background:transparent;
-color:Red;
+ #nav_b:hover{
+     background:transparent;
+     color:Red;
 }
-
-.navbar-nav li {
-
-padding-right:20px;
+ .navbar-nav li {
+     padding-right:20px;
 }
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
+ .navbar-light .navbar-nav .nav-link {
+     color: black;
 }
-
-.navbar{
-padding: 0;
-height:104px;
-
-}       
-
-.navbar-toggler {
-margin-right:15px;
+ .navbar{
+     padding: 0;
+     height:104px;
 }
-
-.div #navbarResponsivesponsive{
-   margin:10px;
+ .navbar-toggler {
+     margin-right:15px;
 }
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-    float: right;
+ .div #navbarResponsivesponsive{
+     margin:10px;
 }
-
-div#navbarResponsive.navbar-collapse.collapse.show {
-background-color: rgba(248, 249, 250, 0.336);
+ .navbar-light .navbar-nav .nav-link {
+     color: black;
+     float: right;
 }
-
-
-
-
+ div#navbarResponsive.navbar-collapse.collapse.show {
+     background-color: rgba(248, 249, 250, 0.336);
+}
 /* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+ .form-popup {
+     display: none;
+     position: fixed;
+     bottom: 0;
+     right: 15px;
+     border: 3px solid #f1f1f1;
+     z-index: 9;
 }
-
 /* Add styles to the form container */
-.form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-    max-height: 520px;
+ .form-container {
+     max-width: 300px;
+     padding: 10px;
+     background-color: white;
+     max-height: 520px;
 }
-
 /* Full-width input fields */
-.form-container input {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+ .form-container input {
+     width: 100%;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: #f1f1f1;
 }
-
 /* When the inputs get focus, do something */
-.form-container input:focus {
-  background-color: #ddd;
-  outline: none;
+ .form-container input:focus {
+     background-color: #ddd;
+     outline: none;
 }
-
 /* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
+ .form-container .btn {
+     background-color: #4CAF50;
+     color: white;
+     padding: 16px 20px;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     margin-bottom:10px;
+     opacity: 0.8;
 }
-
 /* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
+ .form-container .close {
+     position: absolute;
+     top: 0;
+     right: 0;
+     cursor: pointer;
 }
-
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+ .form-container .btn:hover, .open-button:hover {
+     opacity: 1;
 }
-
-div#myForm div#success{
-    color:green;
-    position: static;
-    display: none;
-    text-align: center;
+ div#myForm div#success{
+     color:green;
+     position: static;
+     display: none;
+     text-align: center;
 }
-
-div#myForm div#fail{
-    color:red;
-    display: none;
-    text-align: center;
+ div#myForm div#fail{
+     color:red;
+     display: none;
+     text-align: center;
 }
-
-
-
-/* Media queries  */
-
-@media (max-width: 576Px) and (min-width: 186px)  {
-.navbar {
-    height:89px;
-    } 
+/* Media queries */
+ @media (max-width: 576Px) and (min-width: 186px) {
+     .navbar {
+         height:89px;
+    }
 }
-
-    
-
-@media (max-width: 768px) and (min-width: 577px) { 
-    .navbar {
-    height:89px;
-    } 
+ @media (max-width: 768px) and (min-width: 577px) {
+     .navbar {
+         height:89px;
+    }
 }
-
-@media (max-width: 992px) and (min-width: 769px)  {
+ @media (max-width: 992px) and (min-width: 769px) {
 }
+ 

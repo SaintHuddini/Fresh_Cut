@@ -14,6 +14,7 @@ function fail() {
     return fail()
 };
 
+
 function sendMail(contactForm) {
     emailjs.send("gmail", "fresh_fade", {
         'from_name': contactForm.name.value,
